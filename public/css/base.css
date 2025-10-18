@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./variables.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Normal Black */
+@font-face {
+    font-family: 'Romie';
+    src: url('../fonts/romie-regular.otf'),
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-27 {
+    font-size: 27px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-29 {
+    font-size: 29px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.label-dark {
+    color: var(--dark);
+}
+
+.label-white {
+    color: var(--white);
+}
+
+.label-primary {
+    color: var(--primary);
+}
+
+.label-color1 {
+    color: var(--label-color1);
+}
+
+.lh-15 {
+    line-height: 15px;
+}
+
+.lh-32 {
+    line-height: 32px;
+}
+
+.lh-40 {
+    line-height: 40px;
+}
+
+.default-btn {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 16px 24px;
+    color: var(--white);
+    background: linear-gradient(89deg, #194266 -14.53%, #18C1AD 45.76%, #17FDCF 106.05%) no-repeat;
+    border: 1px solid transparent !important;
+}

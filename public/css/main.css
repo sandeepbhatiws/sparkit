@@ -1,0 +1,69 @@
+@import url('./base.css');
+
+.header-section {
+    /* width: 100%; */
+    padding: 20px 80px;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: 0px; */
+}
+
+.banner-section {
+    width: 100%;
+    height: 825px;
+    background: url('../images/banner-img.png') no-repeat;
+    background-position: center bottom;
+    background-size: 100% 825px;
+}
+
+.main-heading {
+    color: var(--dark);
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 65px;
+    font-family: 'Romie';
+}
+
+.font-Romie {
+    font-family: 'Romie';
+}
+
+.section-heading {
+    color: var(--dark);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: 'Romie';
+}
+
+.banner-btn {
+    padding: 20px 24px;
+}
+
+.imagine-section {
+    padding: 20px 80px;
+}
+
+.imagine-video-wrapper {
+    height: 927px;
+    background-color: var(--dark);
+    border-radius: 40px;
+}
+
+.welcome-section {
+    padding: 80px 80px;
+}
+
+.content-wrapper p:last-child {
+    margin-bottom: 0px !important;
+}
+
+.footer-section {
+    padding: 30px 80px;
+    background: var(--gradient_color, linear-gradient(89deg, #194266 -14.53%, #18C1AD 45.76%, #17FDCF 106.05%));
+}
+
+.cms-section {
+    padding: 80px 80px;
+    
+}
