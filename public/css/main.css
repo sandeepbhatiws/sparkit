@@ -45,8 +45,18 @@
 }
 
 .imagine-video-wrapper {
+    width: 100%;
     height: 927px;
     background-color: var(--dark);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.imagine-video-wrapper video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 40px;
 }
 
@@ -65,5 +75,5 @@
 
 .cms-section {
     padding: 80px 80px;
-    
+
 }

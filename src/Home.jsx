@@ -1,15 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Home() {
+    useEffect(() => {
+        AOS.init({
+            duration: 700,    // animation duration (ms)
+            easing: 'ease-in-out',
+            once: true,      // true -> animate only once while scrolling down
+            offset: 250,     // offset (px) from the original trigger point
+        });
+    }, []);
+
     return (
         <>
             <header class="header-section">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
                         <Link to="/">
-                            <img src="images/logo.svg" width="141" height="28" alt="logoImg"/>
+                            <img src="images/logo.svg" width="141" height="28" alt="logoImg" />
                         </Link>
                     </div>
                     <div class="col-auto">
@@ -60,9 +71,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section class="imagine-section">
+            <section class="imagine-section overflow-hidden">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="slide-right" data-aos-duration="1200">
                         <div class="pe-lg-5">
                             <h2 class="section-heading mb-4">Imagine a world where anyone can design and launch a product in
                                 minutes.</h2>
@@ -87,19 +98,24 @@ export default function Home() {
                             <button class="default-btn d-block banner-btn">CREATE / START NOW</button>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1200">
                         <div class="imagine-video-wrapper">
-                            <video autoplay muted loop playsinline style={{ width:'100%', height:'927px', borderRadius: '44px' }}>
-                                <source src="/images/SPAARKD AD - SOCIAL.mp4" type="video/mp4"/>
-                                Your browser does not support the video tag.
+                            <video
+                                muted
+                                autoPlay
+                                loop
+                                playsInline
+                                controls
+                                style={{ width: '100%', height: '927px', borderRadius: '44px' }}>
+                                <source src="/images/spark-video.mp4" type="video/mp4" />
                             </video>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="welcome-section">
+            <section class="welcome-section overflow-hidden">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="slide-right" data-aos-duration="1200">
                         <div>
                             <h2 class="section-heading mb-4">
                                 What if 1 person could build the next billion dollar brand from home?
@@ -111,7 +127,7 @@ export default function Home() {
                                 </p>
                                 <p class="fs-20 fw-400 lh-32 mb-4 label-color1">
                                     The Fashion industry is an inspiring world of creativity. With 3 trillion dollars in value.
-                                    Influential. Big. Powerful. That belongs to a few.<br/>
+                                    Influential. Big. Powerful. That belongs to a few.<br />
                                     A few who dictate our consumer choices and create a system that makes us pay 20 times the
                                     value
                                     of a brand label.
@@ -138,9 +154,9 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="slide-left" data-aos-duration="1200">
                         <div class="text-center">
-                            <img src="images/welcome-img.png" class="img-fluid d-block mx-auto" alt="Img"/>
+                            <img src="images/welcome-img.png" class="img-fluid d-block mx-auto" alt="Img" />
                         </div>
                     </div>
                 </div>
@@ -148,7 +164,7 @@ export default function Home() {
             <footer class="footer-section">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-auto">
-                        <ul class="ps-0 mb-0 d-flex label-white" style={{ listStylePosition: 'inside'}}>
+                        <ul class="ps-0 mb-0 d-flex label-white" style={{ listStylePosition: 'inside' }}>
                             <li class="me-4">
                                 <Link to="/term-conditions" class="text-decoration-none fs-16 fw-700 lh-34 label-white">Terms & Conditions</Link>
                             </li>
@@ -171,5 +187,5 @@ export default function Home() {
                 </div>
             </footer>
         </>
-  )
+    )
 }
