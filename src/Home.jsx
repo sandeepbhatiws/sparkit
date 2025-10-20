@@ -124,51 +124,53 @@ export default function Home() {
                 <div className='banner-img position-absolute gown-img'>
                     <img src="/images/gown-img.png" width={217} height={231} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute parachute-img'>
+                <div className='banner-img d-none d-md-block position-absolute parachute-img'>
                     <img src="/images/parachute-img.png" width={195} height={293} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute brown-jacket-img'>
+                <div className='banner-img d-none d-md-block position-absolute brown-jacket-img'>
                     <img src="/images/brown-blur-jacket.png" width={165} height={326} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute blur-denim-short'>
+                <div className='banner-img d-none d-md-block position-absolute blur-denim-short'>
                     <img src="/images/blur-denim-short.png" width={131} height={196} alt="Img" />
                 </div>
                 <div className='banner-img position-absolute blur-brown-short'>
                     <img src="/images/blur-brown-short.png" width={115} height={172} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute pink-shirt'>
+                <div className='banner-img d-none d-md-block position-absolute pink-shirt'>
                     <img src="/images/pink-shirt.png" width={103} height={103} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute yellow-blur-hat'>
+                <div className='banner-img d-none d-lg-block position-absolute yellow-blur-hat'>
                     <img src="/images/yellow-blur-hat.png" width={126} height={190} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute brown-blur-hoody'>
+                <div className='banner-img d-none d-lg-block position-absolute brown-blur-hoody'>
                     <img src="/images/brown-blur-hoody.png" width={87} height={118} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute white-blur-skirt'>
+                <div className='banner-img d-none d-xl-block position-absolute white-blur-skirt'>
                     <img src="/images/white-blur-skirt.png" width={87} height={118} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute black-blur-skirt'>
+                <div className='banner-img d-none d-md-block position-absolute black-blur-skirt'>
                     <img src="/images/black-blur-skirt.png" width={108} height={162} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute light-blur-top'>
+                <div className='banner-img d-none d-xl-block position-absolute light-blur-top'>
                     <img src="/images/light-blur-top.png" width={148} height={198} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute brown-blur-hoody2'>
+                <div className='banner-img d-none d-xl-block position-absolute brown-blur-hoody2'>
                     <img src="/images/brown-blur-hoody2.png" width={109} height={164} alt="Img" />
                 </div>
-                <div className='banner-img position-absolute navy-top'>
+                <div className='banner-img d-none d-lg-block position-absolute navy-top'>
                     <img src="/images/navy-top.png" width={128} height={175} alt="Img" />
                 </div>
 
                 <div class="h-100 d-flex align-items-center justify-content-center">
                     <div class="col-11 col-lg-8">
-                        <h1 class="main-heading text-uppercase text-center mb-3">
-                            The World's Shoppable <span class="label-primary font-Romie fw-400">AI Encyclopedia</span>. Designed
-                            and Owned
-                            by You.
-                        </h1>
-                        <button class="default-btn d-block mx-auto banner-btn">Join The Waitlist</button>
+                        <div className='banner-text-wrapper'>
+                            <h1 class="main-heading text-uppercase text-center mb-3">
+                                The World's Shoppable <span class="label-primary font-Romie fw-400">AI Encyclopedia</span>. Designed
+                                and Owned
+                                by You.
+                            </h1>
+                            <button class="default-btn d-block mx-auto banner-btn">Join The Waitlist</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -281,7 +283,7 @@ export default function Home() {
                     </div>
                     <div class="col-md-auto">
                         <p class="fs-16 fw-700 lh-34 label-white text-center mb-0">
-                            © 2024Sparkit. All rights reserved
+                            © 2025Sparkit. All rights reserved
                         </p>
                     </div>
                 </div>

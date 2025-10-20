@@ -20,17 +20,43 @@
 
 /* Animation A: Subtle Left → Top */
 @keyframes subtleLeftTop {
-    0% { transform: translate(0px, 0px); }
-    30% { transform: translate(-5px, 0px); }   /* slight left */
-    60% { transform: translate(-5px, -5px); }  /* then top */
-    100% { transform: translate(0px, 0px); }   /* back */
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    30% {
+        transform: translate(-5px, 0px);
+    }
+
+    /* slight left */
+    60% {
+        transform: translate(-5px, -5px);
+    }
+
+    /* then top */
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+    /* back */
 }
 
 /* Animation B: Subtle Up-Down Floating */
 @keyframes subtleUpDown {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }  /* slight up */
-    100% { transform: translateY(0px); }  /* back */
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    /* slight up */
+    100% {
+        transform: translateY(0px);
+    }
+
+    /* back */
 }
 
 /* ===== Apply animations to images ===== */
@@ -216,6 +242,11 @@
 
 }
 
+.banner-text-wrapper {
+    position: relative;
+    z-index: 888;
+}
+
 @media(max-width: 991px) {
     .header-section {
         position: sticky;
@@ -251,6 +282,101 @@
         background-size: 100% 625px;
     }
 
+    .blue-jacket-img img {
+        width: 144px;
+        height: 144px;
+    }
+
+    .yellow-skirt {
+        top: 70px;
+        left: 170px;
+    }
+
+    .yellow-skirt img {
+        width: 70px;
+        height: 118px;
+
+    }
+
+    .black-joggers {
+        top: 50px;
+        right: -40px;
+    }
+
+    .blur-brown-short {
+        top: 170px;
+        left: 140px;
+    }
+
+    .black-joggers img {
+        width: 130px;
+        height: 190px;
+    }
+
+    .dhoti-img {
+        left: 0px;
+        bottom: 10px;
+    }
+
+    .dhoti-img img {
+        width: 110px;
+        height: 170px;
+    }
+
+    .gown-img {
+        bottom: 0px;
+        right: -20px;
+    }
+
+    .gown-img img {
+        width: 130px;
+        height: 140px;
+    }
+
+    .parachute-img {
+        right: 134px;
+        bottom: 30px;
+    }
+
+    .parachute-img img {
+        width: 90px;
+        height: 135px;
+    }
+
+    .brown-jacket-img {
+        top: 40%;
+    }
+
+    .brown-jacket-img img {
+        width: 80px;
+        height: 160px;
+    }
+
+    .blur-denim-short {
+        top: 35%;
+        left: 45%;
+    }
+
+    .blur-denim-short img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .pink-shirt {
+        top: 70px;
+        right: 190px;
+    }
+
+    .black-blur-skirt {
+        bottom: 70px;
+        left: 130px;
+    }
+
+    .black-blur-skirt img {
+        width: 100px;
+        height: 170px;
+    }
+
     .main-heading {
         font-size: 28px;
         line-height: 45px;
@@ -284,7 +410,9 @@
         border: 1px solid transparent !important;
     }
 
-    .imagine-section, .welcome-section, .cms-section {
+    .imagine-section,
+    .welcome-section,
+    .cms-section {
         padding: 20px 40px;
     }
 
@@ -296,13 +424,75 @@
         font-size: 13px;
     }
 
-    .imagine-video-wrapper, .imagine-video-wrapper video {
+    .imagine-video-wrapper,
+    .imagine-video-wrapper video {
         height: 550px;
         border-radius: 24px;
     }
 
-    .cms-section p, .cms-section ul li {
+    .cms-section p,
+    .cms-section ul li {
         font-size: 15px;
         line-height: 30px;
+    }
+
+    .blue-jacket-img {
+        top: 20px;
+        left: 30px;
+    }
+
+    .blue-jacket-img img {
+        width: 104px;
+        height: 104px;
+    }
+
+    .yellow-skirt {
+        top: 70px;
+        left: 170px;
+    }
+
+    .yellow-skirt img {
+        width: 65px;
+        height: 90px;
+    }
+
+    .black-joggers {
+        top: 30px;
+        right: 0px;
+    }
+
+    .black-joggers img {
+        width: 110px;
+        height: 140px;
+    }
+
+    .blur-brown-short {
+        top: 170px;
+        left: 140px;
+    }
+
+    .blur-brown-short img {
+         width: 90px;
+        height: 140px;
+    }
+
+    .dhoti-img {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .dhoti-img img {
+        width: 90px;
+        height: 120px;
+    }
+
+    .gown-img {
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .gown-img img {
+        width: 110px;
+        height: 110px;
     }
 }

@@ -216,7 +216,7 @@ export default function TermCondition() {
                     </div>
                     <div class="col-md-auto">
                         <p class="fs-16 fw-700 lh-34 label-white text-center mb-0">
-                            © 2024Sparkit. All rights reserved
+                            © 2025Sparkit. All rights reserved
                         </p>
                     </div>
                 </div>
