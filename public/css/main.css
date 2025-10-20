@@ -3,6 +3,7 @@
 .header-section {
     /* width: 100%; */
     padding: 20px 80px;
+    background: var(--white);
     /* position: absolute; */
     /* top: 0px; */
     /* left: 0px; */
@@ -11,9 +12,146 @@
 .banner-section {
     width: 100%;
     height: 825px;
-    background: url('../images/banner-img.png') no-repeat;
+    /* background: url('../images/banner-img.png') no-repeat; */
+    background: none;
     background-position: center bottom;
     background-size: 100% 825px;
+}
+
+/* Animation A: Subtle Left → Top */
+@keyframes subtleLeftTop {
+    0% { transform: translate(0px, 0px); }
+    30% { transform: translate(-5px, 0px); }   /* slight left */
+    60% { transform: translate(-5px, -5px); }  /* then top */
+    100% { transform: translate(0px, 0px); }   /* back */
+}
+
+/* Animation B: Subtle Up-Down Floating */
+@keyframes subtleUpDown {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }  /* slight up */
+    100% { transform: translateY(0px); }  /* back */
+}
+
+/* ===== Apply animations to images ===== */
+
+/* Animation A: Left → Top */
+.blue-jacket-img {
+    left: 0px;
+    top: 0px;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.yellow-skirt {
+    left: 34%;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.black-joggers {
+    right: 12%;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+/* Animation B: Up-Down Floating */
+.dhoti-img {
+    left: 89px;
+    bottom: 0px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+
+.parachute-img {
+    right: 70px;
+    bottom: 0px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.gown-img {
+    right: 267px;
+    bottom: 66px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.brown-jacket-img {
+    top: 30%;
+    right: 0px;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.blur-denim-short {
+    top: 146px;
+    left: 286px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.blur-brown-short {
+    top: 202px;
+    left: 50%;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+.pink-shirt {
+    top: 43px;
+    right: 40%;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.yellow-blur-hat {
+    top: 129px;
+    right: 28%;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.brown-blur-hoody {
+    left: 199px;
+    top: 46%;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+
+.white-blur-skirt {
+    left: 35%;
+    top: 65%;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+.black-blur-skirt {
+    left: 363px;
+    bottom: 69px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.light-blur-top {
+    left: 50%;
+    bottom: 77px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+.brown-blur-hoody2 {
+    right: 36%;
+    bottom: 200px;
+    animation: subtleUpDown 5s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+
+.navy-top {
+    right: 179px;
+    top: 53%;
+    animation: subtleLeftTop 6s ease-in-out infinite;
+    animation-delay: 0.5s;
 }
 
 .main-heading {
@@ -76,4 +214,95 @@
 .cms-section {
     padding: 80px 80px;
 
+}
+
+@media(max-width: 991px) {
+    .header-section {
+        position: sticky;
+        top: -2px;
+        padding: 20px 24px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        z-index: 999;
+    }
+
+    .header-sidebar {
+        position: fixed;
+        top: 0px;
+        left: -350px;
+        width: 280px;
+        transition: 0.3s all ease-in-out;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        /* border-right: 1px solid #ddd; */
+        z-index: 9999;
+        background: var(--white);
+    }
+
+    .logo-wrapper {
+        background: linear-gradient(89deg, #194266 -14.53%, #18C1AD 45.76%, #17FDCF 106.05%);
+    }
+
+    .header-sidebar-active {
+        left: 0px;
+    }
+
+    .banner-section {
+        height: 625px;
+        background-size: 100% 625px;
+    }
+
+    .main-heading {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .section-heading {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .content-text-wrapper p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width: 575px) {
+    .banner-section {
+        padding: 80px 40px;
+        height: 100%;
+        background: none;
+    }
+
+    .default-btn {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        padding: 14px 21px;
+        color: var(--white);
+        background: linear-gradient(89deg, #194266 -14.53%, #18C1AD 45.76%, #17FDCF 106.05%) no-repeat;
+        border: 1px solid transparent !important;
+    }
+
+    .imagine-section, .welcome-section, .cms-section {
+        padding: 20px 40px;
+    }
+
+    .footer-section {
+        padding: 20px 30px;
+    }
+
+    .footer-section ul li a {
+        font-size: 13px;
+    }
+
+    .imagine-video-wrapper, .imagine-video-wrapper video {
+        height: 550px;
+        border-radius: 24px;
+    }
+
+    .cms-section p, .cms-section ul li {
+        font-size: 15px;
+        line-height: 30px;
+    }
 }
